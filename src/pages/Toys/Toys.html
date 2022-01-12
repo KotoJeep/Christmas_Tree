@@ -1,0 +1,132 @@
+<main class="main">
+  <aside class="filters">
+    <div class="filters-block search">
+      <input type="text" placeholder="Поиск" class="search-input" />
+    </div>
+
+    <div class="filters-block sort">
+      Сортировать
+      <select class="sort__select" name="" id="sortSelect">
+        <option value="none">Без сортировки</option>
+        <option value="ascending">По возрастанию</option>
+        <option value="descending">По убыванию</option>
+        <option value="newToOld">Новые → Старые</option>
+        <option value="OldToNew">Старые → Новые</option>
+      </select>
+    </div>
+
+    <div class="filters-block forms">
+      <h4 class="block-title">Форма</h4>
+      <div class="forms-wrapper">
+        <div
+          data-form="колокольчик"
+          class="forms__item"
+          style="
+            background-image: url(https://raw.githubusercontent.com/KotoJeep/assets/9c6514111f38eeb17832a69a89e03faef6bd7564/forms/bell.svg);
+          "
+        ></div>
+        <div
+          data-form="шар"
+          class="forms__item"
+          style="
+            background-image: url(https://raw.githubusercontent.com/KotoJeep/assets/9c6514111f38eeb17832a69a89e03faef6bd7564/forms/ball.svg);
+          "
+        ></div>
+        <div
+          data-form="шишка"
+          class="forms__item"
+          style="
+            background-image: url(https://raw.githubusercontent.com/KotoJeep/assets/9c6514111f38eeb17832a69a89e03faef6bd7564/forms/pine.svg);
+          "
+        ></div>
+        <div
+          data-form="снежинка"
+          class="forms__item"
+          style="
+            background-image: url(https://raw.githubusercontent.com/KotoJeep/assets/9c6514111f38eeb17832a69a89e03faef6bd7564/forms/snowflake.svg);
+          "
+        ></div>
+        <div
+          data-form="фигурка"
+          class="forms__item"
+          style="
+            background-image: url(https://raw.githubusercontent.com/KotoJeep/assets/9c6514111f38eeb17832a69a89e03faef6bd7564/forms/bird_toy.svg);
+          "
+        ></div>
+      </div>
+    </div>
+
+    <div class="filters-block">
+      <h4 class="block-title">Количество экземпляров</h4>
+      <div class="double-input" id="sliderItems"></div>
+      <div class="year">
+        <span id="itemsResultMin"></span>
+        <span id="itemsResultMax"></span>
+      </div>
+    </div>
+
+    <div class="filters-block">
+      <h4 class="block-title">Год приобретения</h4>
+      <div class="double-input" id="sliderYear"></div>
+      <div class="year">
+        <span id="yearResultMin"></span>
+        <span id="yearResultMax"></span>
+      </div>
+    </div>
+
+    <div class="filters-block">
+      <h4 class="block-title">Цвет</h4>
+      <div class="colors">
+        <label class="colors__label">
+          <input data-color="белый" class="colors__input" type="checkbox" id="checkWhite" />
+        </label>
+        <label class="colors__label">
+          <input data-color="желтый" class="colors__input" type="checkbox" id="checkYellow" />
+        </label>
+        <label class="colors__label">
+          <input data-color="красный" class="colors__input" type="checkbox" id="checkRed" />
+        </label>
+        <label class="colors__label">
+          <input data-color="синий" class="colors__input" type="checkbox" id="checkBlue" />
+        </label>
+        <label class="colors__label">
+          <input data-color="зелёный" class="colors__input" type="checkbox" id="checkGreen" />
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-block size">
+      <h4 class="block-title">Размер</h4>
+      <div class="size__block">
+        <label class="check__label">
+          <input data-size="большой" class="check__input size_input" type="checkbox" id="big" />
+          Большой
+        </label>
+        <label class="check__label">
+          <input data-size="средний" class="check__input size_input" type="checkbox" id="medium" />
+          Средний
+        </label>
+        <label class="check__label">
+          <input data-size="малый" class="check__input size_input" type="checkbox" id="small" />
+          Маленький
+        </label>
+      </div>
+    </div>
+
+    <div class="filters-block favourites">
+      <label class="check__label">
+        <input class="check__input" type="checkbox" name="" id="favourites" />
+        Только любимые
+      </label>
+    </div>
+
+    <div class="filters-block btns">
+      <button class="btns__reset btns__reset-filter">Сбросить фильтры</button>
+    </div>
+  </aside>
+
+  <section class="cards">
+    <h2 class="section-title">Игрушки</h2>
+    <div class="cards-wrapper"></div>
+  </section>
+</main>
